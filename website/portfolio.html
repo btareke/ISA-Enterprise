@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects Portfolio | ISA Enterprise, Inc.</title>
+    <meta
+      name="description"
+      content="Explore ISA Enterprise project portfolio with before/after comparisons and service filtering."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#005a8c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a class="logo" href="index.html">
+          <img src="assets/isa-logo.jpg" alt="ISA Enterprise, Inc. logo" />
+          <span>ISA Enterprise, Inc.</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="services/index.html">Services</a>
+          <a href="portfolio.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="container section-subtitle">
+        <h1 class="section-title">Projects Portfolio</h1>
+        <p>
+          Browse ISA Enterprise projects by service type, location, or scope. Use the filters or
+          search to find relevant work.
+        </p>
+        <input
+          class="search-input"
+          type="search"
+          data-search
+          placeholder="Search by project name or location"
+        />
+      </div>
+      <div class="container filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="concrete">Concrete</button>
+        <button class="filter-btn" data-filter="ductbank">Ductbank</button>
+        <button class="filter-btn" data-filter="excavation">Excavation</button>
+        <button class="filter-btn" data-filter="traffic">Traffic Control</button>
+      </div>
+      <div class="container portfolio-grid">
+        <article
+          class="portfolio-card"
+          data-filter-item="ductbank"
+          data-search-item="Metro Fiber Expansion | Seattle, WA"
+        >
+          <h3>Metro Fiber Expansion</h3>
+          <p class="muted">Seattle, WA • Fiber &amp; Power Ductbank</p>
+          <div
+            class="before-after"
+            data-before-after
+            data-before="assets/projects/ductbank/ductbank-01.jpg"
+            data-after="assets/projects/ductbank/ductbank-03.jpg"
+          >
+            <div class="before-layer">Before</div>
+            <div class="after-layer">After</div>
+            <div class="slider"></div>
+            <div class="handle">↔</div>
+          </div>
+          <p class="note">Completed ahead of schedule with zero safety incidents.</p>
+          <button
+            class="btn btn-outline"
+            data-lightbox="assets/projects/ductbank/ductbank-03.jpg"
+            data-lightbox-alt="Metro Fiber Expansion"
+          >
+            View Fullscreen
+          </button>
+        </article>
+        <article
+          class="portfolio-card"
+          data-filter-item="concrete"
+          data-search-item="I-5 Bridge Restoration | Tacoma, WA"
+        >
+          <h3>I-5 Bridge Restoration</h3>
+          <p class="muted">Tacoma, WA • Concrete Saw Cutting</p>
+          <div
+            class="before-after"
+            data-before-after
+            data-before="assets/projects/concrete-saw-cutting/cutting-02.jpg"
+            data-after="assets/projects/concrete-saw-cutting/cutting-03.jpg"
+          >
+            <div class="before-layer">Before</div>
+            <div class="after-layer">After</div>
+            <div class="slider"></div>
+            <div class="handle">↔</div>
+          </div>
+          <p class="note">Coordinated overnight closures with certified flaggers.</p>
+          <button
+            class="btn btn-outline"
+            data-lightbox="assets/projects/concrete-saw-cutting/cutting-03.jpg"
+            data-lightbox-alt="I-5 Bridge Restoration"
+          >
+            View Fullscreen
+          </button>
+        </article>
+        <article
+          class="portfolio-card"
+          data-filter-item="excavation"
+          data-search-item="Utility Yard Expansion | Kent, WA"
+        >
+          <h3>Utility Yard Expansion</h3>
+          <p class="muted">Kent, WA • Excavation &amp; Concrete</p>
+          <div
+            class="before-after"
+            data-before-after
+            data-before="assets/projects/excavation/excavation-01.jpg"
+            data-after="assets/projects/excavation/excavation-02.jpg"
+          >
+            <div class="before-layer">Before</div>
+            <div class="after-layer">After</div>
+            <div class="slider"></div>
+            <div class="handle">↔</div>
+          </div>
+          <p class="note">Delivered 40,000+ sqft of graded site prep.</p>
+          <button
+            class="btn btn-outline"
+            data-lightbox="assets/projects/excavation/excavation-02.jpg"
+            data-lightbox-alt="Utility Yard Expansion"
+          >
+            View Fullscreen
+          </button>
+        </article>
+        <article
+          class="portfolio-card"
+          data-filter-item="traffic"
+          data-search-item="Downtown Signal Upgrade | Bellevue, WA"
+        >
+          <h3>Downtown Signal Upgrade</h3>
+          <p class="muted">Bellevue, WA • Flagger Service</p>
+          <div
+            class="before-after"
+            data-before-after
+            data-before="assets/projects/flagger/flagger-01.jpg"
+            data-after="assets/projects/flagger/flagger-02.jpg"
+          >
+            <div class="before-layer">Before</div>
+            <div class="after-layer">After</div>
+            <div class="slider"></div>
+            <div class="handle">↔</div>
+          </div>
+          <p class="note">Maintained traffic flow with adaptive lane control.</p>
+          <button
+            class="btn btn-outline"
+            data-lightbox="assets/projects/flagger/flagger-02.jpg"
+            data-lightbox-alt="Downtown Signal Upgrade"
+          >
+            View Fullscreen
+          </button>
+        </article>
+        <article
+          class="portfolio-card"
+          data-filter-item="concrete"
+          data-search-item="Regional Transit Pad | Spokane, WA"
+        >
+          <h3>Regional Transit Pad</h3>
+          <p class="muted">Spokane, WA • Concrete Work</p>
+          <div
+            class="before-after"
+            data-before-after
+            data-before="assets/projects/concrete-work/concrete-01.jpg"
+            data-after="assets/projects/concrete-work/concrete-02.jpg"
+          >
+            <div class="before-layer">Before</div>
+            <div class="after-layer">After</div>
+            <div class="slider"></div>
+            <div class="handle">↔</div>
+          </div>
+          <p class="note">High-strength concrete placement with rapid cure.</p>
+          <button
+            class="btn btn-outline"
+            data-lightbox="assets/projects/concrete-work/concrete-02.jpg"
+            data-lightbox-alt="Regional Transit Pad"
+          >
+            View Fullscreen
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-subtitle">
+        <h2 class="section-title">Project Gallery</h2>
+        <p>Explore additional ISA Enterprise work across service lines.</p>
+      </div>
+      <div class="container image-grid">
+        <img
+          src="assets/projects/ductbank/ductbank-02.jpg"
+          alt="Fiber ductbank installation"
+          data-lightbox="assets/projects/ductbank/ductbank-02.jpg"
+        />
+        <img
+          src="assets/projects/concrete-saw-cutting/cutting-01.jpg"
+          alt="Concrete saw cutting work"
+          data-lightbox="assets/projects/concrete-saw-cutting/cutting-01.jpg"
+        />
+        <img
+          src="assets/projects/excavation/excavation-03.jpg"
+          alt="Excavation and trenching"
+          data-lightbox="assets/projects/excavation/excavation-03.jpg"
+        />
+        <img
+          src="assets/projects/flagger/flagger-03.jpg"
+          alt="Flagger service team"
+          data-lightbox="assets/projects/flagger/flagger-03.jpg"
+        />
+        <img
+          src="assets/projects/manhole/manhole-01.jpg"
+          alt="Manhole installation"
+          data-lightbox="assets/projects/manhole/manhole-01.jpg"
+        />
+        <img
+          src="assets/projects/concrete-work/concrete-03.jpg"
+          alt="Concrete placement"
+          data-lightbox="assets/projects/concrete-work/concrete-03.jpg"
+        />
+        <img
+          src="assets/projects/pole-base/pole-base-02.jpg"
+          alt="Pole base installation"
+          data-lightbox="assets/projects/pole-base/pole-base-02.jpg"
+        />
+        <img
+          src="assets/projects/ductbank/ductbank-01.jpg"
+          alt="Utility ductbank build"
+          data-lightbox="assets/projects/ductbank/ductbank-01.jpg"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Want to See More?</h3>
+          <p class="muted">Request a tailored portfolio based on your project type.</p>
+        </div>
+        <div>
+          <h4>Next Steps</h4>
+          <a href="contact.html">Request a Quote</a>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p class="muted">info@isaenterprise.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
