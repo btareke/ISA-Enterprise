@@ -104,51 +104,6 @@ if (searchInput) {
   });
 }
 
-const sliders = document.querySelectorAll("[data-before-after]");
-
-sliders.forEach((slider) => {
-  const afterLayer = slider.querySelector(".after-layer");
-  const handle = slider.querySelector(".handle");
-  const line = slider.querySelector(".slider");
-  let active = false;
-
-  const setPosition = (clientX) => {
-    const rect = slider.getBoundingClientRect();
-    const offset = Math.min(Math.max(clientX - rect.left, 0), rect.width);
-    const percent = (offset / rect.width) * 100;
-    afterLayer.style.width = `${percent}%`;
-    handle.style.left = `${percent}%`;
-    line.style.left = `${percent}%`;
-  };
-
-  slider.addEventListener("pointerdown", (event) => {
-    active = true;
-    slider.setPointerCapture(event.pointerId);
-    setPosition(event.clientX);
-  });
-
-  slider.addEventListener("pointermove", (event) => {
-    if (!active) return;
-    setPosition(event.clientX);
-  });
-
-  slider.addEventListener("pointerup", () => {
-    active = false;
-  });
-
-  const beforeImage = slider.dataset.before;
-  const afterImage = slider.dataset.after;
-  if (beforeImage) {
-    const beforeLayer = slider.querySelector(".before-layer");
-    if (beforeLayer) {
-      beforeLayer.style.backgroundImage = `url("${beforeImage}")`;
-    }
-  }
-  if (afterImage) {
-    afterLayer.style.backgroundImage = `url("${afterImage}")`;
-  }
-});
-
 const heroRotator = document.querySelector("[data-hero-rotator]");
 
 if (heroRotator) {
