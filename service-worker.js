@@ -14,6 +14,7 @@ const ASSETS = [
   "/services/excavation-work.html",
   "/services/manhole-installation.html",
   "/services/pole-base-installation.html",
+  "/services/trucking.html",
   "/css/styles.css",
   "/js/main.js",
   "/assets/isa-logo.jpg",

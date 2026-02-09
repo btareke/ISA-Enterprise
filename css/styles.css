@@ -135,15 +135,21 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.6rem;
   font-weight: 700;
   color: var(--blue-700);
 }
 
+.logo span {
+  font-size: 1.5rem;
+}
+
 .logo img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
+  transform: scale(1.25);
+  transform-origin: left center;
 }
 
 .nav-links {
@@ -275,18 +281,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
+  width: 250px;
+  height: 130px;
   padding: 0.5rem 0.8rem;
 }
 
 .marquee-item img {
-  height: 64px;
+  height: 130px;
   width: auto;
   max-width: 100%;
   display: block;
   object-fit: contain;
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+}
+
+.marquee-item img.partner-scale-lg {
+  transform: scale(1.2);
+  transform-origin: center;
 }
 
 @keyframes partners-marquee {
@@ -562,11 +573,15 @@ a {
   position: relative;
 }
 
+.timeline-item h4 {
+  margin: 0 0 0.35rem;
+}
+
 .timeline-item::before {
   content: "";
   position: absolute;
   left: -1.75rem;
-  top: 0.3rem;
+  top: 0.45em;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -670,12 +685,12 @@ textarea {
   }
 
   .marquee-item {
-    width: 140px;
-    height: 76px;
+w    width: 170px;
+    height: 92px;
   }
 
   .marquee-item img {
-    height: 54px;
+    height: 66px;
   }
 
   .carousel-slide {
