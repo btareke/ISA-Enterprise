@@ -693,6 +693,10 @@ w    width: 170px;
     height: 66px;
   }
 
+  .marquee-item img.partner-scale-lg {
+    transform: scale(1.25);
+  }
+
   .carousel-slide {
     padding: 1.5rem;
   }
