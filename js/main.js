@@ -124,7 +124,7 @@ if (heroRotator) {
         rotator.style.backgroundImage = `url("${images[index]}")`;
         rotator.classList.remove("fade-out");
       }, 500);
-    }, 7000);
+    }, 3500);
   }
 }
 
